@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { LayoutProvider } from "../layout/context/layoutcontext";
 
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.css";
@@ -13,7 +12,7 @@ interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: "Sakai by PrimeReact | Free Admin Template for NextJS",
+  title: "더블에스픽",
   description:
     "The ultimate collection of design-agnostic, flexible and accessible React UI Components.",
   robots: { index: false, follow: false },
@@ -43,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         ></link>
       </head>
       <body>
-        <LayoutProvider>{children}</LayoutProvider>
+        {children}
       </body>
     </html>
   );
