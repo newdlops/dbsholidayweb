@@ -4,6 +4,7 @@ import { Button } from "primereact/button";
 import { SplitButton } from "primereact/splitbutton";
 import styles from "./index.module.scss";
 import { classNames } from "primereact/utils";
+import {ButtonGroup} from "primereact/buttongroup";
 
 const ButtonDemo = () => {
   const [loading1, setLoading1] = useState<boolean>(false);
@@ -112,11 +113,11 @@ const ButtonDemo = () => {
 
         <div className="card">
           <h5>Button Group</h5>
-          <span className="p-buttonset flex">
+          <ButtonGroup>
             <Button label="Save" icon="pi pi-check" />
             <Button label="Delete" icon="pi pi-trash" />
             <Button label="Cancel" icon="pi pi-times" />
-          </span>
+          </ButtonGroup>
         </div>
 
         <div className="card">

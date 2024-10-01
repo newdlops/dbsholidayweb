@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { LayoutProvider } from "../layout/context/layoutcontext";
 
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.css";
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
